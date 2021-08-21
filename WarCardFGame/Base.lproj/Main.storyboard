@@ -94,6 +94,19 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRh-Hf-BXQ" userLabel="Replay">
+                                <rect key="frame" x="172" y="643.5" width="70" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YYS-nn-Kza"/>
+                                    <constraint firstAttribute="width" constant="70" id="t7f-QT-SDU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="replay button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="replayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHc-FV-PQ9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -111,6 +124,8 @@
                             <constraint firstAttribute="trailing" secondItem="uoc-TU-wtT" secondAttribute="trailing" id="ie6-yK-Jwl"/>
                             <constraint firstItem="uoc-TU-wtT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kvT-gS-u0R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HqX-M1-pd6" secondAttribute="trailing" constant="20" id="nEZ-6E-QW6"/>
+                            <constraint firstItem="yRh-Hf-BXQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nVa-xl-Sc8"/>
+                            <constraint firstItem="yRh-Hf-BXQ" firstAttribute="top" secondItem="Ugq-nd-GvI" secondAttribute="bottom" constant="60" id="vhU-MO-g8g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HqX-M1-pd6" secondAttribute="bottom" constant="20" id="zKz-vD-OiW"/>
                         </constraints>
                     </view>
@@ -132,6 +147,7 @@
         <image name="card6" width="120" height="170"/>
         <image name="dealbutton" width="82" height="31"/>
         <image name="logo" width="122" height="67"/>
+        <image name="replay button" width="980" height="822"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
